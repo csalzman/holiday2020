@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState} from 'react'
+import Buttons from './components/Buttons'
+import HappyFamily from './components/HappyFamily'
 
-function App() {
+const App = () => {
+  const [woo, setWoo] = useState(false)
+
+  const buttonOptions = [{name: "tryingTimes"}, {name: "woo"}]
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex flex-row">
+      
+      <HappyFamily title="Happy Holidays" subHead="From the Salzmans" imgSrc="../FamilyPhotos-3.jpg"/>
+      
+      <Buttons buttonOptions={buttonOptions} />
+      
     </div>
   );
 }
