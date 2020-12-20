@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import HappyFamily from "./components/HappyFamily";
 import Snow from "./components/Snow";
+import HolidayButton from "./components/HolidayButton";
 import cn from "classnames";
 
 const App = () => {
@@ -10,17 +11,14 @@ const App = () => {
   const [tooCoolState, setTooCoolState] = useState(false);
 
   const tryingTimes = () => {
-    console.log("clicked");
     setTryingTimesState(!tryingTimesState);
   };
 
   const letItSnow = () => {
-    console.log("clicked");
     setLetItSnowState(!letItSnowState);
   };
 
   const tooCool = () => {
-    console.log("clicked");
     setTooCoolState(!tooCoolState);
   };
 
@@ -32,35 +30,32 @@ const App = () => {
 
   return (
     <div
-      className={cn("h-screen md:p-10", letItSnowState ? "bg-blue-100" : "")}
+      className={cn(
+        "h-screen md:p-10 transition-all",
+        "bg-white text-black",
+        letItSnowState ? "bg-blue-400 text-white" : ""
+      )}
     >
       <div
         className={cn(
-          "App flex flex-col md:flex-row content-center items-center md:items-start m-auto max-w-7xl",
-          letItSnowState ? "bg-blue-100" : ""
+          "App flex flex-col md:flex-row content-center items-center md:items-start m-auto max-w-6xl",
+          letItSnowState ? "bg-blue-400" : "bg-white"
         )}
       >
         {letItSnowState && <Snow />}
         <HappyFamily
-          title="Happy Holidays"
-          subHead="From the Salzmans"
+          title={`Merry Christmas and a Happy New Year!`}
+          subHead="Betsy, Chris, Scout, and Cas Salzman"
           imgSrc="../FamilyPhotos-3.jpg"
           tryingTimesState={tryingTimesState}
           tooCoolState={tooCoolState}
         />
 
-        <div className="bg-black text-white flex flex-col mx-8">
-          <h2>Holiday Options</h2>
-          <div className="flex flex-row md:flex-col align-middle items-middle">
-            {buttonOptions.map((button) => {
-              return (
-                <button
-                  className="p-4 bg-white text-black rounded-lg m-4 hover:text-white hover:bg-black border-4 border-white"
-                  onClick={button.clickHandle}
-                >
-                  {button.name}
-                </button>
-              );
+        <div className="flex flex-col mx-8 m-auto border border-4 md:border-0">
+          <h2 className="hidden md:block">Holiday Options</h2>
+          <div className="flex flex-row md:flex-col align-middle items-middle w-full">
+            {buttonOptions.map((buttonOption) => {
+              return <HolidayButton buttonOption={buttonOption} />;
             })}
           </div>
         </div>
