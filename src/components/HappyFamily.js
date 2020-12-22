@@ -31,7 +31,7 @@ const HappyFamily = (props) => {
             src={shades}
             className={cn(
               !tooCoolState ? "transform -translate-y-64 opacity-0" : "",
-              "absolute top-0 left-0 transition-all ease-in duration-500 transform translate-y-0"
+              "absolute top-0 left-0 transition-all ease-in duration-500 transform translate-y-0 pointer-events-none"
             )}
             alt="Deal With It"
           />
