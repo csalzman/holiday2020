@@ -1,7 +1,10 @@
 import cn from "classnames";
 
+import familyphoto from "../images/familyphoto.jpg";
+import shades from "../images/shades.png";
+
 const HappyFamily = (props) => {
-  const { title, subHead, imgSrc, tryingTimesState, tooCoolState } = props;
+  const { title, subHead, tryingTimesState, tooCoolState } = props;
 
   return (
     <div
@@ -17,18 +20,20 @@ const HappyFamily = (props) => {
 
         <div className="relative m-auto p-2">
           <img
-            src={imgSrc}
+            src={familyphoto}
             className={cn(
               "relative rounded-xl shadow-lg",
               tryingTimesState ? "filter-grayscale" : ""
             )}
+            alt="Salzman Family"
           />
           <img
-            src="../test.png"
+            src={shades}
             className={cn(
               !tooCoolState ? "transform -translate-y-64 opacity-0" : "",
               "absolute top-0 left-0 transition-all ease-in duration-500 transform translate-y-0"
             )}
+            alt="Deal With It"
           />
         </div>
         <h2 className="text-3xl">

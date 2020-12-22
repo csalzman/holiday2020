@@ -88,7 +88,6 @@ const App = () => {
           <HappyFamily
             title={`Merry Christmas!`}
             subHead="Betsy, Chris, Scout, and Caspian Salzman"
-            imgSrc="./FamilyPhotos-3.jpg"
             tryingTimesState={tryingTimesState}
             tooCoolState={tooCoolState}
             letItSnowState={letItSnowState}
