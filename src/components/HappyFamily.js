@@ -18,7 +18,7 @@ const HappyFamily = (props) => {
           {tryingTimesState ? `Despite it all ... happy holidays.` : title}
         </h1>
 
-        <div className="relative m-auto p-2">
+        <div className="relative m-auto">
           <img
             src={familyphoto}
             className={cn(
