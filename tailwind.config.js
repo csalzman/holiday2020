@@ -14,6 +14,10 @@ module.exports = {
       none: "none",
       blur: "blur(20px)",
     },
+    fontFamily: {
+      display: ["Buffon"],
+      mellow: ["Georgia"],
+    },
   },
   variants: {
     filter: ["responsive"], // defaults to ['responsive']

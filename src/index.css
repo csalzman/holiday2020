@@ -2,9 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "Buffon";
+    src: local("Buffon"), url(./fonts/Buffon-Regular.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: "Buffon";
+    font-weight: 200;
+    src: local("Buffon"), url(./fonts/Buffon-Thin.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: "Buffon";
+    font-weight: 600;
+    src: local("Buffon"), url(./fonts/Buffon-Bold.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: "Buffon";
+    font-weight: 900;
+    src: local("Buffon"), url(./fonts/Buffon-Heavy.otf) format("opentype");
+  }
+}
+
 body {
   margin: 0;
-  font-family: Buffon;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
@@ -20,27 +44,4 @@ h2 {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-@font-face {
-  font-family: "Buffon";
-  src: local("Buffon"), url(./fonts/Buffon-Regular.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "Buffon";
-  font-weight: 200;
-  src: local("Buffon"), url(./fonts/Buffon-Thin.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "Buffon";
-  font-weight: 600;
-  src: local("Buffon"), url(./fonts/Buffon-Bold.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "Buffon";
-  font-weight: 900;
-  src: local("Buffon"), url(./fonts/Buffon-Heavy.otf) format("opentype");
 }

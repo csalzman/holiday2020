@@ -13,7 +13,7 @@ const HolidayButton = (props) => {
   return (
     <button
       className={cn(
-        "p-1 m-1 md:py-4 md:m-3 rounded-lg",
+        "p-1 m-4 md:py-4 md:m-3 rounded-lg",
         "border-4 border-red-400",
         "bg-red-600 text-white", // Normal
         "hover:bg-red-900 hover:text-white", // Hover
