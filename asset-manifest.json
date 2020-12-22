@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/holiday2020/static/css/main.0a5444f0.chunk.css",
+    "main.js": "/holiday2020/static/js/main.131419f3.chunk.js",
+    "main.js.map": "/holiday2020/static/js/main.131419f3.chunk.js.map",
+    "runtime-main.js": "/holiday2020/static/js/runtime-main.3f64cf2e.js",
+    "runtime-main.js.map": "/holiday2020/static/js/runtime-main.3f64cf2e.js.map",
+    "static/js/2.1eebc85a.chunk.js": "/holiday2020/static/js/2.1eebc85a.chunk.js",
+    "static/js/2.1eebc85a.chunk.js.map": "/holiday2020/static/js/2.1eebc85a.chunk.js.map",
+    "static/js/3.11101feb.chunk.js": "/holiday2020/static/js/3.11101feb.chunk.js",
+    "static/js/3.11101feb.chunk.js.map": "/holiday2020/static/js/3.11101feb.chunk.js.map",
+    "index.html": "/holiday2020/index.html",
+    "static/css/main.0a5444f0.chunk.css.map": "/holiday2020/static/css/main.0a5444f0.chunk.css.map",
+    "static/js/2.1eebc85a.chunk.js.LICENSE.txt": "/holiday2020/static/js/2.1eebc85a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/holiday2020/static/media/Buffon-Thin.a3f2354f.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3f64cf2e.js",
+    "static/js/2.1eebc85a.chunk.js",
+    "static/css/main.0a5444f0.chunk.css",
+    "static/js/main.131419f3.chunk.js"
+  ]
+}
