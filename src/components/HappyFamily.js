@@ -1,7 +1,7 @@
 import cn from "classnames";
 
 import familyphoto from "../images/familyphoto.jpg";
-import shades from "../images/shades.png";
+import shades from "../images/shades-dealwithit.png";
 
 const HappyFamily = (props) => {
   const { title, subHead, tryingTimesState, tooCoolState } = props;
