@@ -64,13 +64,8 @@ const App = () => {
     <div className={cn("md:p-10 transition-all", decidePrimaryColors())}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>🎄 Salzman Holiday 2020 🎄</title>
+        <title>🎄 2020 Salzman Holiday Card 🎄</title>
         <link rel="canonical" href="https://chrissalzman.com" />
-        <script>
-          {`body {
-            @apply bg-blue
-          }`}
-        </script>
       </Helmet>
       <div className="min-h-screen ">
         <div
